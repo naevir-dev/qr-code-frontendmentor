@@ -4,6 +4,9 @@
     --clr-h: hsl(218, 44%, 22%);
     --ff-400: "Outfit", Arial, Helvetica;
     --ff-700: "Outfit Bold", Arial, Helvetica;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2.5rem;
 }
 
 @font-face {
@@ -64,20 +67,23 @@ p {
     font-size: 1rem;
 }
 
-.container {
-    max-width: 400px;
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 20rem;
+    width: 100%;
     background-color: white;
-    padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     text-align: center;
+    padding: var(--spacing-200) var(--spacing-200) var(--spacing-400) var(--spacing-200)
 }
 
-.container h1 {
+.card h2 {
     font-family: var(--ff-700) sans-serif;
     color: var(--clr-h);
     font-size: 1.5rem;
-    margin: 1.5rem 0;
 }
 
 .attribution {
@@ -88,3 +94,6 @@ p {
     text-align: center;
 }
 
+.footer {
+    position: absolute;
+}
