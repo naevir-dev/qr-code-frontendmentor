@@ -1,0 +1,90 @@
+:root {
+    --clr-bg: hsl(212, 45%, 89%);
+    --clr-p: hsl(216, 15%, 48%);
+    --clr-h: hsl(218, 44%, 22%);
+    --ff-400: "Outfit", Arial, Helvetica;
+    --ff-700: "Outfit Bold", Arial, Helvetica;
+}
+
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    src: url("fonts/Outfit-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Outfit Bold";
+    font-style: normal;
+    src: url("fonts/Outfit-Bold.ttf");
+    font-weight: 700;
+}
+
+/* Boiler Plate */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: var(--ff-400), sans-serif;
+    color: var(--clr-p);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    background-color: var(--clr-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+    aspect-ratio: 1/1;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    font-family: var(--ff-400) sans-serif;
+    color: var(--clr-p);
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 400px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h1 {
+    font-family: var(--ff-700) sans-serif;
+    color: var(--clr-h);
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.attribution {
+    margin-top: 24px;
+    font-family: var(--ff-400) sans-serif;
+    color: var(--clr-p);
+    font-size: 0.75rem;
+    text-align: center;
+}
+
